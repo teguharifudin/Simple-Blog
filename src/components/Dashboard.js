@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://api.spaceflightnewsapi.net/v3/articles/")
+    axios.get("https://www.teguharief.com/api/posts/")
     .then((response) => {
       setArticles(response.data);
       setLoading(false);
